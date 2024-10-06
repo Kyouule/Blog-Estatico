@@ -1,0 +1,306 @@
+*{
+    font-family:sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #1a783c;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    width: 100vw;
+    height: 110px;
+}
+header img{
+    height: 150px;
+    width: auto;
+}
+nav{
+    margin-right: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    padding: 0 20px;
+}
+nav a img{
+    width: 40px;
+    height: auto;
+}
+nav a span{
+    display: flex;
+}
+
+
+
+/* Área principal */
+main {
+    background-color: #03412b;
+    display: flex;
+    flex-direction: column;
+}
+.titulo-index{
+    color: white;
+    margin: 30px 60px;
+}
+.text-main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 60px;
+}
+.text-main h2{
+    color: white;
+}
+.text-main a{
+    display: flex;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+.text-main a img{
+    width: 20px;
+    margin-right: 5px;
+}
+.post {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 1.6;
+    width: 90vw;
+    padding-top: 30px;
+    margin: auto;
+    margin-bottom: 100px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.texto{
+    width: 65%;
+    padding: 15px;
+    font-size: 18px;
+}
+.imgdev{
+    margin: auto;
+}
+.imgdev img {
+    width: 380px;
+}
+.texto ol {
+    margin: 20px;
+}
+.texto ol li {
+    margin-bottom: 10px;
+}
+
+
+/* Área de sessao */
+.sessao {
+    width: 100%;
+    display: flex;
+    justify-content: space-between; 
+    margin: 100px 0;
+    flex-wrap: wrap;
+}
+
+.assunto {
+    width: 30%;
+    text-align: center;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.assunto img {
+    width: 150px;
+    margin-bottom: 20px;
+}
+.assunto p{
+    width: 90%;
+    margin: auto;
+}
+.assunto a{
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #03412b; 
+    color: white; 
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.sessao a:hover {
+    background-color: #046e43;
+    color: #ffffff; 
+}
+
+
+/* pagina js */
+
+.js-post{
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+    margin-bottom: 20px;
+    font-size: px;
+    line-height: 1.6;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.js-texto{
+    font-size: 30px;
+}
+
+.imgjs img {
+    width: 600px;
+    height: auto;
+}
+
+/* pagina html */
+.main-texto{
+    font-size: 20px;
+    width: 60%;
+    padding: 20px;
+}
+.img-main{
+    margin: auto;
+    text-align: center;
+}
+.img-main img{
+    width: 450px;
+}
+
+
+/* Rodapé */
+footer {
+    background-color: rgb(26, 120, 60);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 10px 0;
+    width: 100vw;
+    height: 150px;
+}
+footer p{
+    padding: 5px 0;
+}
+
+/* Responsividade */
+@media screen and (max-width: 1365px) {
+    .main-texto{
+        width: 55%;
+    }
+}
+@media screen and (max-width: 1301px) {
+    .texto, .main-texto{
+        width: 55%;
+    }
+}
+@media screen and (max-width: 1210px) {
+    .img-main img{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 1023px) {
+    .texto{
+        width: 100%;
+    }
+    .imgdev{
+        display: none;
+    }
+    .img-main img{
+        padding: 20px 0;
+    }
+    .main-texto{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 668px) {
+    header h1{
+        text-align: center;
+        font-size: 25px;
+    }
+    nav a img{
+        width: 30px;
+    }
+    .sessao {
+        justify-content: center; 
+    }
+}
+@media screen and (max-width: 580px) {
+    .sessao{
+        margin-top: 0;
+        flex-direction: column;
+        align-items: center;
+    }
+    .assunto{
+        width: 100%;
+        margin: 20px 0;
+    }
+    nav{
+        margin-right: 0;
+    }
+    .main-texto{
+        padding: 0;
+    }
+}
+@media screen and (max-width: 480px) {
+    nav a span{
+        display: none;
+    }
+    nav a img{
+        width: 20px;
+    }
+    header h1{
+        margin: auto;
+    }
+    main h2{
+        font-size: 20px;
+    }
+    .texto, footer{
+        font-size: 15px;
+    }
+    header h1{
+        font-size: 20px;
+    }
+    .texto{
+        padding: 0;
+    }
+    main h2{
+        text-align: center;
+    }
+}
+@media screen and (max-width: 415px) {
+    footer{
+        font-size: 10px;
+    }
+}
+@media screen and (max-width: 400px) {
+    #logo{
+        display: none;
+    }
+    .img-main img{
+        width: 150px;
+    }
+}
+@media screen and (max-width: 385px) {
+    .assunto img{
+        width: 100px;
+    }
+}
